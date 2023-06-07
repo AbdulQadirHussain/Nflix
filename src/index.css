@@ -1,13 +1,125 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+/* Heading index.js */
+.heading{
+  border-bottom: 1px solid darkred;
+  padding: 10px;
+  background-color: black;
+  color: red;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 50px;
+  letter-spacing: 15px;
+}
+
+
+
+
+/* Styling Card.jsx */
+.all_cards {
+  /* border: 2px black solid; */
+  height: auto;
+  width: 100%;
+}
+
+
+
+
+.card {
+  border: 2px darkred solid;
+  height: 400px;
+  width: 21.25%;
+  margin: 6%;
+  background-color: black;
+  border-radius: 12px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  box-shadow: 0px 13px 10px -7px rgba(155, 0, 0, 0.9);
+  float: left;
+}
+
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.05, 1.05);
+  border-color: red;
+}
+
+.card:hover .card_sname{
+  color: red;
+}
+
+
+
+
+
+.card_img{
+  height: 270px;
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+
+
+
+.card_info{
+  text-align: center;
+  /* border: 2px red solid; */
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+}
+
+
+
+
+.card_category{
+  color: darkgrey;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+
+
+
+.card_sname{
+  color: darkred;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 1000;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  letter-spacing: 5px;
+}
+
+
+
+
+button{
+  padding: 5px 8px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+  background-color: white;
+  border: 2px solid black;
+  outline: none;
+  cursor: pointer;
+  border-radius: 12px;
+}
+
+button:hover {
+  background-color: black;
+  color:red;
+  border-color: darkred;
 }
