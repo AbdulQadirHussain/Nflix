@@ -24,6 +24,7 @@ let headingName = 'Top Ten Series';
 
 ReactDOM.render(
   <>
+  <React.StrictMode>
   <h1 className='heading'>Top Netflix Series</h1>
  
   {/* Created a FUNCTION on line #10 and calling it 
@@ -66,6 +67,7 @@ ReactDOM.render(
   category={sdata[2].category}
   sname={sdata[2].sname}
   slink={sdata[2].slink}  /> */}
+  </React.StrictMode>
   </>,
   document.getElementById('main')
 );
