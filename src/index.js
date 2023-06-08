@@ -11,6 +11,7 @@ function ncardMap(val, ind){
   console.log(val, ind)
   return(
     <Card
+    key={val.id}
     imgsrc={val.imgsrc}
     category={val.category}
     sname={val.sname}
@@ -33,7 +34,8 @@ ReactDOM.render(
   {sdata.map((v, index) => {
     // console.log(index);
     return(
-      <Card 
+      <Card
+      key={v.id}
       imgsrc = {v.imgsrc}
       category = {v.category}
       sname = {v.sname}
