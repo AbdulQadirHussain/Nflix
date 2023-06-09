@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import Card from './Card';
 import sdata from './Seriesdata';
+import App from './App';
 
 
 // console.log(sdata[0]);
@@ -26,7 +27,8 @@ ReactDOM.render(
   <>
   <React.StrictMode>
   <h1 className='heading'>Top Netflix Series</h1>
- 
+
+  
   {/* Created a FUNCTION on line #10 and calling it 
   on a MAP FUNCTION in a render method */}
   {sdata.map((ncardMap))}
@@ -44,6 +46,8 @@ ReactDOM.render(
       />
     )
   })}
+
+  
 
 
   {/* Manual Card props add */}
@@ -67,6 +71,12 @@ ReactDOM.render(
   category={sdata[2].category}
   sname={sdata[2].sname}
   slink={sdata[2].slink}  /> */}
+  
+
+  {/* Use of Nflix And Amazon Search via 
+  if else OR Ternary Operator */}
+  <App />
+  
   </React.StrictMode>
   </>,
   document.getElementById('main')
